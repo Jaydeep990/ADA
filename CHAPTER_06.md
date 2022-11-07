@@ -127,3 +127,23 @@ procedure bfs(v)
 | 16.        | Space complexity                        | In BFS, the space complexity is more critical as compared to time complexity.                                                                                         | DFS has lesser space complexity because at a time it needs to store only a single path from the root to the leaf node.                                                                   |
 | 17.        | Speed                                   | BFS is slow as compared to DFS.                                                                                                                                       | DFS is fast as compared to BFS.                                                                                                                                                          |
 | 18.        | When to use?                            | When the target is close to the source, BFS performs better.                                                                                                          | When the target is far from the source, DFS is preferable.                                                                                                                               |
+
+
+## Topological Sorting
+- Topological sorting is a linear ordering of vertices such that for every directed edge (u,v) , vertex u comes before v in the ordering.
+- Topological Sorting is possible if the graph is Directed Acyclic Graph (DAG).
+- In DFS, we print a vertex and then recursively call DFS for its adjacent vertices. 
+- In topological sorting, we need to print a vertex before its adjacent vertices. 
+- Time Complexity: O(V+E). 
+- Auxiliary space: O(V). The extra space is needed for the stack.
+#### Applications of Topological Sorting:
+- Topological Sorting is mainly used for scheduling jobs from the given dependencies among jobs. 
+- In computer science, applications of this type arise in:
+- Instruction scheduling
+- Ordering of formula cell evaluation when recomputing formula values in spreadsheets
+- Logic synthesis
+- Determining the order of compilation tasks to perform in make files
+- Data serialization
+- Resolving symbol dependencies in linkers
+#### Example 
+<img src="https://assets.leetcode.com/users/images/63bd7ad6-403c-42f1-b8bb-2ea41e42af9a_1613794080.8115625.png">
