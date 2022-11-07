@@ -146,4 +146,14 @@ procedure bfs(v)
 - Data serialization
 - Resolving symbol dependencies in linkers
 #### Example 
-<img src="https://assets.leetcode.com/users/images/63bd7ad6-403c-42f1-b8bb-2ea41e42af9a_1613794080.8115625.png">
+<img src="https://assets.leetcode.com/users/images/63bd7ad6-403c-42f1-b8bb-2ea41e42af9a_1613794080.8115625.png" width=50%>
+
+## Articulation point
+- A vertex is said to be an articulation point in a graph if removal of the vertex and associated edges disconnects the graph.
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/ArticulationPoints21-300x177.png" width=50%>
+
+## Connected Component
+- A connected component or simply component of an undirected graph is a subgraph in which each pair of nodes is connected with each other via a path.
+- In connected components, all the nodes are always reachable from each other.
+- The undirected graph has three connected components:
+<img src="https://www.baeldung.com/wp-content/uploads/sites/4/2020/05/3-component.png" width=50%>
