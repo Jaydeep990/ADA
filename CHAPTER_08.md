@@ -88,10 +88,44 @@ Output: Pattern found at index 0, Pattern found at index 9, Pattern found at ind
 - For pattern matching
 - For searching string in a bigger text
 
+## Finite Automata
+
+## KMP (Knuth Morris Pratt) Algorithm
+
+- Given a text of length N txt[0..N-1] and a pattern of length M pat[0..M-1]
+- We need to find all occurrences of pat[] in txt[].
+- You may assume that N > M.
+
+```
+Input:  txt[] =  “AABAACAADAABAABA”, pat[] =  “AABA”
+Output: Pattern found at index 0, Pattern found at index 9, Pattern found at index 12
+```
+
+#### KMP overview
+- KMP algorithm is used to find a "Pattern" in a "Text". 
+- This algorithm campares character by character from left to right. - But whenever a mismatch occurs, it uses a preprocessed table called "Prefix Table" to skip characters comparison while matching.
+
+#### **Components of the KMP algorithm:**
+1. Prefix.
+2. Suffix.
+3. LPS table : Table for detecting the Longest Proper Prefix that is also a Suffix
 
 
 
+##### **Time Complexity**: O(n) in the worst case where n is the length of text.
+##### **Space Complexity**: O(m) where m is the size of the pattern.
 
+##### **Advantages of the KMP algorithm**
+- A very obvious advantage of the KMP algorithm is it's time complexity. It's very fast as compared to any other exact string matching algorithm.
 
+##### **Disadvantage of the KMP algorithm**
+- The only disadvantage of the KMP algorithm is that it is very complex to understand.
 
+##### **Applications of the KMP Algorithm**
+1. Search engines
+2. Searching content in large databases
+3. Spam filters
+4. Spelling checkers
+5. Digital Forensics
 
+<img src="https://scaler-topics-articles-md.s3.us-west-2.amazonaws.com/kmp-algorithm-lps-table.gif">
